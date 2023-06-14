@@ -94,7 +94,6 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
@@ -103,8 +102,6 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project, please do share it
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
@@ -112,15 +109,9 @@ If you like this project, please do share it
 
 I would like to give thanks to Microverse.
 
-<!-- FAQ (optional) -->
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/Daniel-Kigozi/Mobile-First/blob/my-html/LICENSE.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
