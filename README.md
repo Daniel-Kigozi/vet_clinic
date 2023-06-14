@@ -1,15 +1,15 @@
 # Vet_Clinic
-
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
 <a name="readme-top"></a>
+
+<div align="center">
+
+  
+  <br/>
+
+  <h3><b>Vet_Clinic</b></h3>
+
+</div>
+
 
 # 📗 Table of Contents
 
@@ -24,7 +24,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -33,45 +32,90 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
-# 📖 [VET_CLINIC] <a name="about-project"></a>
+# 📖 [Vet_Clinic] <a name="about-project"></a>
 
-**[Vet_Clinic]** includes files with plain SQL that can be used to recreate a database:
+
+**[Vet_Clinic]** 
+-This project is database taking in information and returning queries
 
 ## 🛠 Built With <a name="built-with"></a>
-- PostgreSQL
 
 <details>
-<summary>Database</summary>
+<summary>Client</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li>SQL</li>
   </ul>
 </details>
 
-<!-- GETTING STARTED -->
+### Key Features <a name="key-features"></a>
+ - Storing data and retrieving it.
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-- Git clone 'https://github.com/Daniel-Kigozi/vet_clinic.git'
 
-<!-- AUTHORS -->
+### Prerequisites
 
-## 👥 Authors <a name="authors"></a>
+In order to run this project you need:
+- install PostgreSQL on your computer
+- IDE
+- git
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+### Setup
+
+Clone this repository to your desired folder:
+- Clone the repository `git clone https://github.com/Daniel-Kigozi/vet_clinic.git`
+- Run `cd vet_clinic`
+
+
+### Install
+
+Install this project with:
+- Run SQL commands
+
+
+👤 **Daniel Kigozi**
 
 - GitHub: [Daniel-Kigozi](https://github.com/Daniel-Kigozi)
 - Twitter: [@DanielKigozi15](https://twitter.com/@DanielKigozi15)
 - LinkedIn: [daniel-kigozi-375182208/](https://www.linkedin.com/in/daniel-kigozi-375182208/)
 
+🔭 **Future Features**
+- Have more pages
+
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this project, please do share it
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
 I would like to give thanks to Microverse.
+
+<!-- FAQ (optional) -->
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -80,5 +124,3 @@ I would like to give thanks to Microverse.
 This project is [MIT](https://github.com/Daniel-Kigozi/Mobile-First/blob/my-html/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- CONTRIBUTING -->
-
