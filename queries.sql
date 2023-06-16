@@ -112,3 +112,90 @@ JOIN animals a ON o.id = a.owner_id
 GROUP BY o.full_name
 ORDER BY animal_count DESC
 LIMIT 1;
+
+SELECT a.name
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+JOIN vets vet ON v.vet_id = vet.id
+JOIN (
+  SELECT MAX(visit_date) AS last_visit
+  FROM visits
+  WHERE vet_id = (
+    SELECT id
+    FROM vets
+    WHERE name = 'William Tatcher'
+  )
+) AS sub ON v.visit_date = sub.last_visit;
+
+SELECT COUNT(DISTINCT animal_id) AS animal_count
+FROM visits v
+JOIN vets vet ON v.vet_id = vet.id
+JOIN (
+  SELECT id
+  FROM vets
+  WHERE name = 'Stephanie Mendez'
+) AS sub ON vet.id = sub.id;
+
+SELECT v.name, s.specialty
+FROM vets v
+LEFT JOIN specializations vs ON v.id = vs.vet_id
+LEFT JOIN specializations s ON vs.specialty_id = s.id;
+
+SELECT a.name
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+JOIN vets vet ON v.vet_id = vet.id
+JOIN (
+  SELECT id
+  FROM vets
+  WHERE name = 'Stephanie Mendez'
+) AS sub ON vet.id = sub.id
+WHERE v.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
+
+SELECT a.name
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+GROUP BY a.name
+ORDER BY COUNT(v.animal_id) DESC
+LIMIT 1;
+
+SELECT v.name
+FROM vets v
+JOIN visits vs ON v.id = vs.vet_id
+JOIN animals a ON vs.animal_id = a.id
+WHERE v.name = 'Maisy Smith'
+ORDER BY vs.visit_date
+LIMIT 1;
+
+SELECT a.name AS animal_name, v.name AS vet_name, vs.visit_date
+FROM animals a
+JOIN visits vs ON a.id = vs.animal_id
+JOIN vets v ON vs.vet_id = v.id
+WHERE vs.visit_date = (
+  SELECT MAX(visit_date)
+  FROM visits
+);
+
+SELECT COUNT(*) AS mismatched_visits
+FROM visits v
+JOIN animals a ON v.animal_id = a.id
+JOIN vets vet ON v.vet_id = vet.id
+LEFT JOIN specializations vs ON vet.id = vs.vet_id AND a.species_id = vs.species_id
+WHERE vs.vet_id IS NULL;
+
+SELECT s.specialty
+FROM Specialties s
+JOIN specializations vs ON s.id = vs.specialty_id
+JOIN (
+  SELECT a.species, COUNT(*) AS species_count
+  FROM animals a
+  JOIN visits v ON a.id = v.animal_id
+  WHERE a.owner = 'Maisy Smith'
+  GROUP BY a.species
+  ORDER BY species_count DESC
+  LIMIT 1
+) AS sub ON s.id = sub.species;
+
+
+
+
